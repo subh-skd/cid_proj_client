@@ -1,13 +1,13 @@
 {
-  "name": "cid_proj_client",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "name": "cid_proj_client",
   "scripts": {
+    "lint": "eslint .",
     "dev": "vite --host",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --host"
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",

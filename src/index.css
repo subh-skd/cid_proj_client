@@ -123,10 +123,30 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#f0f4f8] text-foreground;
   }
 
   html {
-    @apply font-sans;
+    @apply font-sans antialiased;
   }
+}
+
+.text-primary {
+  color: #2cb1bc;
+}
+
+.bg-primary {
+  background-color: #2cb1bc;
+}
+
+.text-secondary {
+  color: #0e7c86
+}
+
+.bg-secondary {
+  background-color: #0e7c86
+}
+
+.text-black-primary {
+  color: #102a43
 }

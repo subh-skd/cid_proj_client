@@ -3,12 +3,12 @@ import PublicNavbar from "@/components/navbar/PublicNavbar";
 
 const PublicLayout = () => {
   return (
-    <>
+    <div className="container mx-auto flex flex-col h-screen">
       <PublicNavbar />
-      <main>
+      <main className="flex-1 overflow-auto">
         <Outlet />
       </main>
-    </>
+    </div>
   );
 };
 

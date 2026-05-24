@@ -14,18 +14,13 @@ const AppRoutes = () => {
 
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          isLoggedIn ? (
-            <Navigate to="/dashboard" replace />
-          ) : (
-            <Navigate to="/landing" replace />
-          )
-        }
-      />
       <Route element={<PublicLayout />}>
-        <Route path="/landing" element={<Landing />} />
+        <Route
+          path="/"
+          element={
+            isLoggedIn ? <Navigate to="/dashboard" replace /> : <Landing />
+          }
+        />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Route>
